@@ -26,7 +26,7 @@ namespace WebApiDemo.Controllers
 
         public IHttpActionResult GetEmployee(int id)
         {
-            var employee = employees.FirstOrDefault(p => p.ID == id);
+            var employee = employees.FirstOrDefault(e => e.ID == id);
 
             if(employee == null)
             {
